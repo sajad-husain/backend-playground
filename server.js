@@ -1,8 +1,7 @@
-const express = require("express");
-
-const app = express();
+const app = require("./src/app");
 
 app.get("/", (req, res) => {
+  // we can access the data which is coming from frontend using req method
   res.send("First Milestone");
 });
 
